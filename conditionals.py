@@ -3,6 +3,8 @@
 # Day 2 Challenges
 # -------------------------------------------- 
 
+import random
+
 message = "Welcome to Day 2.\nToday we are learning about conditionals.\nLet's practice writing some conditionals of our own!"
 print(message)
 # -------------------------------------------- 
@@ -11,8 +13,11 @@ print("------------------- Challenge 1 -------------------")
 # Can you drive?
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether you can drive in your city. 
-
-
+age = input ("Enter your age: ")
+print("age")
+print(type(age))
+if int(age) >= 16:
+   print("You are allowed to drive!")
 
 
 
@@ -32,10 +37,16 @@ print("------------------- Challenge 2 -------------------")
    # Write conditional statements that checks which is the highest and prints the highest score. 
    # Hint: Create three variables and assign them random scores. 
 
+score_one= 0
+score_two= 5
+score_three= 4 
 
-
-
-
+if score_one > score_two and score_one > score_three:
+   print ("Score one is the highest!")
+elif score_two > score_one and score_two > score_three:
+   print("Score 2 is the highest!")
+else:
+   print("Score 3 is the highest")
 
 
 
@@ -59,9 +70,10 @@ print("------------------- Challenge 3 -------------------")
 # Snowing: Wear gloves and a scarf 
 
 # Here's a variable to get you started:
-weather = "rainy"
-
-
+rainy=1
+weather = 1
+if weather=1:
+   print("Bring an umbrella")
 
 
 
@@ -105,6 +117,7 @@ print("------------------- Challenge 4 -------------------")
 # Write a set of conditionals that will take a number from 1 to 7 
 # and print out the corresponding day of the week. 
 # Make sure to add a statement that accounts for any numbers out of range! 
+day0OfTheWeek = input("Enter in the day of the week, 1-7 representing Mon-Sun: ")
 
 
 
