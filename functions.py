@@ -15,35 +15,60 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
+from sqlite3.dbapi2 import _Statement
+
+
 print("------------------- Challenge 1 -------------------")
 
 # **** Challenge 1: Problem 1 ****
-# Write a function called print_message() that prints any message you want.
+# Write a function called print_five_messages() that calls print_message() five times.
+def show_message():
+    """Display a message about what I'm learning."""
+    msg = "I'm learning to  code."
+    print(msg)
 
+show_message()
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
-
+def print_5_messages():
+	print("AHHAHha")
+print_5_messages()
+print_5_messages()
+print_5_messages()
+print_5_messages()
+print_5_messages()
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
 
-
+def get_user_input(statement):
+	decision = input("Would you like to print your message once or five times?")
+	if(decision == str(5)):
+		print_5_messages(statement)
+		# otherwise only print it once
+	elif(decision ==str(1)):
+		show_message(statement)
+	else:
+		print("please enter 1 or 5!!")
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
-
+def print_greeting():
+	print ("Hope u have a good day! Make sure to poop.")
+print_greeting()
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
-
-
+def print_closing():
+	print ("Bye! Wish tomorrow wouldn't be as bad as today.")
+print_closing
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
-
-
-
+def run():
+	print ("Hi! Write something about your day!")
+	
 # -------------------------------------------- 
 
 # Challenge 2: Functions are also able to take input and return output. 
