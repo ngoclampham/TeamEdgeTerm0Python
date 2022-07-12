@@ -67,7 +67,10 @@ print_closing
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
 def run():
-	print ("Hi! Write something about your day!")
+	print ("Hi!")
+	user_choice = input ( "Write something about your day?")
+	print(input)
+	print ("Thank you and remember don't break me <3.")
 	
 # -------------------------------------------- 
 
@@ -89,7 +92,13 @@ print("------------------- Challenge 2 -------------------")
 		# sum_double(2, 2) → 8
 
 # -------------------------------------------- 
+def sum_double(num1, num2):
+	if num1==num2:
+		return (num1+num2)*2
+	else: 
+		return num1 + num2
 
+print (sum_double(2,2))
 
 
 
@@ -110,7 +119,13 @@ print("------------------- Challenge 2 -------------------")
 		# makes_10(1, 9) → True
 
 # -------------------------------------------- 
+def makes_10(a, b):
+	if a==10 or b == 10 or b+a == 10:
+		print ("True")
+	else:
+		print ("False")
 
+makes_10(1,5)
 
 
 
@@ -135,6 +150,7 @@ print("------------------- Challenge 2 -------------------")
 		# alarm_clock(0, False) → "10:00"
 
 # -------------------------------------------- 
+def alarm_off():
 
 
 

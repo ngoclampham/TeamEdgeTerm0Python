@@ -39,10 +39,15 @@
 # as well as TAX and tip
 
 # Remember: Your user should be able to order at least 3 items (a drink, meal, and dessert item). 
-
+``
 # --------------------------------------------
 
-
+drink_price = 0
+meal_price = 0
+dessert_price = 0
+total_bill = drink_price + meal_proce +dessert_price
+total_people = 3
+tax = 0.0925 * (total_bill)
 
 # -------------------------------------------- 
 
