@@ -1,3 +1,4 @@
+
 #********************************************************************
                                                                   
  #  Team Edge list Challenges!                                     
@@ -29,6 +30,8 @@ print("names: " + str(names))
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
 
+friends = ["Jimena", "Faith", "Brandon", "Joel", "Jaylah"]
+print("friends: " + str(friends))
 
 #this list holds numbers
 numbers = [12.9, 23.4 , 100, 3.1415 , 500, 1.20]
@@ -36,18 +39,22 @@ print("numbers: " + str(numbers))
 
 #-->TODO: Declare another list and add in at least 5 numbers. Why five? I don't know. It just feels right.
 
-
+other_numbers = [7, 32, 191, 58, 670]
+print("other numbers: " + str(other_numbers))
 
 #this list has mixed data types. It's allowed in Python!
 random_stuff = ["Aardvark", True, False, 1.23, "Grandpa"]
 print("random: " + str(random_stuff))
 
 #-->TODO: Declare and log a list filled with the first 5 things that come into your head, booleans, Strings, numbers are all cool,
-
+random_things = ["True", "Food", 7, "False", "Mountain"]
+print("random things: " + str(random_things))
 
 #-->TODO: Declare and log two more lists with whatever you want. 
 
-
+random_list = ["Blah", "Random", 120023, "Computer", "Google"]
+random_list_two = [640, "House", "music", 8, "False"]
+print("two random lists: " + str(random_list) + "\n" + str(random_list_two))
 print("------------------- CHALLENGE 2 -------------------")
  
 #This code logs the first element of the names list:
@@ -55,10 +62,12 @@ print("The first name is " + names[0])
 
 #-->TODO: Print the name of your best friend from your friends list
 
+print("The name of my best friend is " + friends[1])
+
 
 #-->TODO: Print the first AND last elements of any list you made, or make a brand new one.
 
-
+print("These are the first and last elements of our list " + random_list[0] + " " + random_list[4])
 print("------------------- CHALLENGE 3 -------------------")
 #this code changes the value of the second element of the names list, then we print the list:
 names[1] = "Alyssa"
@@ -66,6 +75,8 @@ print(names)
 
 #-->TODO: Replace your friends! Modify the list to replace any or all of your friends with new ones.
 
+friends[2] = "Coach Alex"
+print(friends)
 
 #The code below uses the times_ten() function to multiply the first element in our list by 10:
 def times_ten(number):
@@ -77,9 +88,19 @@ print(numbers)
 
 #-->TODO: Write another function that multiplies a number by 1000 and print the list, as above 
 
-
+def repeat(other_numbers):
+  other_numbers = other_numbers * 1000
+  return other_numbers
 
 #-->TODO: Replace your random list elements with anything you want, using the index. 
+
+random_list[0] = "meh, "
+random_list[1] = "Kit Kat, "
+random_list[2] = "Pen, "
+random_list[3] = "Phone, "
+random_list[4] = "Nothing"
+a = random_list
+print(a[0] + a[1] + a[2] + a[3] + a[4])
 
 print("------------------- CHALLENGE 4 -------------------")
 
@@ -91,6 +112,8 @@ print("This list has babies: " + str(parent_list))
 
 #-->TODO: Store and print all the lists we have worked on thus far in a new parent list
 
+other_parent_list = [friends, other_numbers, random_things]
+print("We have made this many lists: " + str(other_parent_list))
 
 print("------------------- CHALLENGE 5 -------------------")
 
@@ -102,7 +125,7 @@ movies.append("Black Panther")
 print("Movies now has: " + str(movies))
 
 #-->TODO: Declare a list with 5 favorite songs
-
+movie_list = ["Doctor Strange", "Stranger Things", "Harry Potter", ""]
 #-->TODO: Add 2-3 more songs using .append() and print both before and after.
 
 #We can also remove elements using .pop(), which removes the last element or the element at the given index. You can store it after it comes out:

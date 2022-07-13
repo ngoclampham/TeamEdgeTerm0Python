@@ -41,8 +41,16 @@ def test_prime(n):
     return True
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
+#for loop
+for i in range (0,100):
+  print(i + " is prime?: " + str(test prime: (i)))
 
-
+#while loop
+count = 0
+while count <= 100"
+if test_prime(count)== True:
+  print(count)
+  
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
@@ -51,8 +59,14 @@ items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" 
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
 
-
-
+key_found = False
+num = 0
+while key_found == False:
+  if items[num]=="key":
+    key_found = trueprint("Found the key!")
+  else"
+    print(f"List entry{num} wasn't the key")
+    num = num + 1
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
 #Oh no! these functions have loops that don't do what they say they should do. Can you fix that?
@@ -61,11 +75,19 @@ print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 #-->TODO: Make me count  2, 4, 6,..., 50
 
 def even_numbers_to_fifty():
-    num = 50
-    while num < 50:
+    num = 0
+    while num <=50:
         print("number: " + str(num))
+        num+=2
 
 even_numbers_to_fifty()
+
+def counting():
+    for x in range(2, 50, 2):
+        print("number: " + str(x))
+        
+counting()
+
 
 #-->TODO: Make this design  below
 #
@@ -106,6 +128,18 @@ print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 
 is_correct = False
 
+while is_correct == False:
+  random_num1 = random.randint(0,1)
+  print(random_num1)
+  random_num2 = random.randint(0,1)
+  print(random_num2)
+  user_input1 = input("Guess first number: ")
+  user_input2 = input("Guess the second number: ")
+  if random_num1 == int(user_input1) and random_num2 == int(user_input2):
+    print("You are correct!")
+    is_correct = True 
+  else:
+    print("Wrong numbers! Try again.")
 
 print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
 
@@ -116,14 +150,16 @@ print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
 keep_asking = False
 
 def prompt_user():
-    pass
+    print("Hey, what do you think I am?")
+    response = input()
+    return response
 
 def response(response):
-    pass
+    print(f"I know you're {response}, but what am I?")
 
-while keep_asking:
-    #response(prompt_user())
-    pass
+while keep_asking == True:
+    response(prompt_user())
+    
 
 #-->TODO: Challenge! write a secret word to break out of the loop!
 
