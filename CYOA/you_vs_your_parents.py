@@ -48,18 +48,24 @@ def check_answer(user_input):
 
   if first_rxn == str(1):
     print ("Your mom: 'Sorry isn't enough, you do this every single day.' 😩'")
-    sec_rxn  = input("1. I know, I know but tomorrow will be different. I swear, I will sleep early and wake up on time. 2. � I don't do that everyday but I will show  youthat I can wake up on time tomorrow!")
-    print ("Do whatever you want with your life, we just want twhat'sbest for you.🤏x100000 (Conflict solved but you tied with your parents ~*U*")
+    sec_rxn  = input("1. I know, I know but tomorrow will be different. I swear, I will sleep early and wake up on time. 2. � I don't do that everyday but I will show you that I can wake up on time tomorrow!")
+    print ("Do whatever you want with your life, we just want what's best for you.🤏x100000")
+    sleep(0.5)
+    print("Conflict solved but you tied with your parents ~*U*")
     input_count+=2
 
   if first_rxn == str(2):
-    print ("Your mom look at you with eyes of bullets, she says: 'hen, what's the big deal? We work early just so that you can be fulfilled. What you just said devaluates all the efforts we had to put out. I think it 'sis best to send you back home.")
-    sec_rxn = input ("1. Have I ever asked for any of this'2. ' think you get it wrong, I only missed a PE class so it won't do anything.")
+    print ("Your mom look at you with eyes of bullets, she says: 'Then, what's the big deal? We work early just so that you can be fulfilled. What you just said devaluates all the efforts we had to put out. I think it is best to send you back home.")
+    sec_rxn = input ("1. Have I ever asked for any of this' 2.'I think you get it wrong, I only missed a PE class so it won't do anything.'")
     if sec_rxn == str(1):
-      print ("You have hurt your parents'feeling sand won 💔. Woohoo!" )
+      print ("You have hurted your parents' feelings and won 💔. Woohoo!" )
       input_count+=2
     elif sec_rxn == str(2):
-      print ("Your mom: 'Do not repeat, this ok?'(AYYY, you wio! You have successfully avoided an argument as well as prevented hurting your loved ones feelings🎉)")
+      print ("...")
+      sleep(0.3)
+      print ("Your mom: 'Do not repeat, this ok?'")
+      sleep(0.5)
+      print("AYYY, you win! You have successfully avoided an argument as well as prevented hurting your loved ones feelings🎉)")
       input_count+=2
     else:
       print ("Please enter a valid input!")
@@ -71,7 +77,8 @@ def check_answer(user_input):
       print("Parents barge into your room, what is wrong with you? you can't disrespect me like that in MY house.(You lost!😑✌️)")
       input_count=2
     elif sec_rxn == str(2):
-      print("Your parents are stunned by your decision and you are surprised yourself. You run out of the house, your parents call mutiple times and leave multiple viocemails. While crossing the street, a car runs you over. Ambulance siren sounds  likedeath, your parents go to the hospital after someone called from your phone. You are losing consciousness. When your parents arrive, only your dad can control his emotions while your mom can't keep her tears from coming out. You see your mom crying in your subconsciousness and wake up. You and your parents are still able to see each other.")
+      sleep(1)
+      print("Your parents are stunned by your decision and you are surprised yourself. You run out of the house, your parents call mutiple times and leave multiple viocemails. While crossing the street, a car runs you over. Ambulance siren sounds like death, your parents go to the hospital after someone called from your phone. You are losing consciousness. When your parents arrive, only your dad can control his emotions while your mom can't keep her tears from coming out. You see your mom crying in your subconsciousness and wake up. You and your parents are still able to see each other.")
       input_count=2
     else:
       print ("Please enter a valid input!")   
@@ -90,6 +97,14 @@ def start():
   name = input("What is your name? ")
   print ("Hi, " + name)
   print ("You can type 'help' when struggling.")
+  print ("     )                            )                  (                                    ")
+  print ("  ( /(                         ( /(                  )\ )                           )     ")
+  print ("  )\())       (     )          )\())       (   (    (()/(    )  (      (         ( /(     ")
+  print (" ((_)\  (    ))\   /((   (    ((_)\  (    ))\  )(    /(_))( /(  )(    ))\  (     )\())(   ")
+  print ("__ ((_) )\  /((_) (_))\  )\  __ ((_) )\  /((_)(()\  (_))  )(_))(()\  /((_) )\ ) (_))/ )\  ")
+  print ("\ \ / /((_)(_))(  _)((_)((_) \ \ / /((_)(_))(  ((_) | _ \((_)_  ((_)(_))  _(_/( | |_ ((_) ")
+  print (" \ V // _ \| || | \ V / (_-<  \ V // _ \| || || '_| |  _// _` || '_|/ -_)| ' \))|  _|(_-< ")
+  print ("  |_| \___/ \_,_|  \_/  /__/   |_| \___/ \_,_||_|   |_|  \__,_||_|  \___||_||_|  \__|/__/ ")
   print ("Your parent go to work at 6am and come home at 5pm. You were playing video games last night, so you slept really late and woke up at 3pm and didn't go to class on time. You must win your parents in the argument or avoid it.")
   print("Choose something that fits you by entering a matching number: ")
   gender = input ("1. female, 2. male ")
